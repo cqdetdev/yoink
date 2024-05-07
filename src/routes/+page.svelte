@@ -1,4 +1,5 @@
 <script>
+	import Layout from "./+layout.svelte";
 	import "./styles.css"
 </script>
 
@@ -7,5 +8,6 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section class="flex min-h-screen flex-col items-center justify-center bg-slate-900">
+<section class="flex min-h-screen flex-col items-center justify-center">
+	<Layout />
 </section>
