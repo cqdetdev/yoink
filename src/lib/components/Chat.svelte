@@ -23,8 +23,8 @@
 
 	const doRequest = async () => {
 		messages.update(msgs => [...msgs, { ai: false, content }, { ai: true, content: "Loading..." }]);
-		content = ''
 		api = request(content);
+		content = ''
 		await api.doRequest();
 		api.subscribe(response => {
 			messages.update(msgs => {
